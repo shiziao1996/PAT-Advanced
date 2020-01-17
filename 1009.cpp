@@ -4,8 +4,6 @@
 #include <algorithm>
 using namespace std;
 
-
-
 int main(){
     // Input
     map<int, double> m1;
@@ -31,7 +29,6 @@ int main(){
     for(auto it1 = m1.begin(); it1 != m1.end(); it1++){
         e1 = it1->first;
         c1 = it1->second;
-     //   cout <<" 1 "<< e << " " << c << endl;
         for(auto it2 = m2.begin(); it2 != m2.end(); it2++){
             e2 = it2->first;
             c2 = it2->second;
@@ -40,6 +37,7 @@ int main(){
             m3[e3] = c3 + m3[e3];
         }
     }
+    // 删除系数=0
     for(auto it3 = m3.begin(); it3 != m3.end(); it3++){
         if(it3->second == 0.0){
             m3.erase(it3);
