@@ -70,5 +70,5 @@ int main(){
     }
     if(result == -1) cout << "Impossible" << endl;
     else cout << result << endl;
-    Return 0;
+    return 0;
 }
